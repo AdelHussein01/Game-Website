@@ -1,15 +1,31 @@
-#Random files
+# =========================
+# Custom / Project files
+# =========================
 firstfile.txt
 
+# =========================
 # Dependencies
+# =========================
 node_modules/
+.pnp/
+.pnp.*
+.yarn/
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Build folders
+# =========================
+# Build outputs
+# =========================
 dist/
+build/
 .next/
 out/
 
+# =========================
 # Logs
+# =========================
 logs/
 *.log
 npm-debug.log*
@@ -17,35 +33,58 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# =========================
 # Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# =========================
+.env*
+!.env.example
 
+# =========================
 # OS files
+# =========================
 .DS_Store
+**/.DS_Store
 Thumbs.db
 
-# IDE/editor files
+# =========================
+# IDE / Editors
+# =========================
 .vscode/
 .idea/
 
+# =========================
 # TypeScript
+# =========================
 *.tsbuildinfo
+next-env.d.ts
 
-# Coverage
+# =========================
+# Testing / Coverage
+# =========================
 coverage/
 
+# =========================
 # Temporary files
+# =========================
 tmp/
 temp/
 
-# Package manager
+# =========================
+# Package managers
+# =========================
 .pnpm-store/
 
-# Optional lock files (ONLY if we decide not to track them)
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+# =========================
+# Lint cache
+# =========================
+.eslintcache
+
+# =========================
+# Turbo / Next.js cache
+# =========================
+.turbo/
+
+# =========================
+# Deployment (Vercel)
+# =========================
+.vercel/
