@@ -14,14 +14,17 @@
   "type": "commonjs",
   "dependencies": {
     "@nestjs/common": "^11.1.21",
+    "@nestjs/config": "^4.0.4",
     "@nestjs/core": "^11.1.21",
     "@nestjs/platform-express": "^11.1.21",
+    "pg": "^8.21.0",
     "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.21",
     "@nestjs/schematics": "^11.1.0",
     "@types/node": "^25.8.0",
+    "@types/pg": "^8.20.0",
     "typescript": "^6.0.3"
   }
 }
